@@ -5,7 +5,7 @@ logger.setLevel(logging.INFO)
 
 formatter = logging.Formatter('%(filename)s:%(lineno)d:%(levelname)s:%(name)s:%(message)s')
 
-file_handler = logging.FileHandler('employee.log')
+file_handler = logging.FileHandler('log/employee.log')
 file_handler.setFormatter(formatter)
 
 logger.addHandler(file_handler)
